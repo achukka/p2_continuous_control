@@ -22,12 +22,15 @@ approaches and extract the best out of both worlds. They are more stable than TD
 An Actor-Critic method contains two neural network one for the actor and one for the critic. The actor's role is to update the policy which is then 
 evaluted by the critc, in turn training the actor to acheive a good policy. 
 
+---
 
 ### Results
 
 #### Hyper Parameters
 
 #### Observations
+
+---
 
 ### Further Improvements
 
