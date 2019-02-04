@@ -26,20 +26,20 @@ In order to update the policy in vanila Policy-gradient methods we do the follow
 - Compute the average them.
 - Calculate the gradient.
 - Perform gradient descent and update the policy.
-<br>
+
 ![img](https://github.com/adityaharish/p2_continuous_control/blob/master/images/policy_gradient_update.gif)
-<br>
+&nbsp;
 
 In Actor-Critic methods we use the value provided by the critic to update the actors policy.
-<br>
-![img](https://github.com/adityaharish/p2_continuous_control/blob/master/images/actor_critic_update.gif)
 
-<br>
+![img](https://github.com/adityaharish/p2_continuous_control/blob/master/images/actor_critic_update.gif)
+&nbsp;
+
 [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/pdf/1509.02971.pdf) is the version of actor-critic method we used to solve the above environment. Here the actor generates a deterministic policy which is evaluated by the critic. Note that some of the actor-critic variants use stochastic policies. We update the critic using TD error and action learns using the following deterministic policy gradient.
-<br><br>
+&nbsp;
+
 ![img](https://github.com/adityaharish/p2_continuous_control/blob/master/images/DDPG%20update%20equation.gif)
 
-<br><br>
 In the above equation the actor is represented using a parametrized function <img src="https://github.com/adityaharish/p2_continuous_control/blob/master/images/actor_policy.gif"/> and `Q(s,a)` is the critic.
 
 The above update step is ran for each agent (in this case 20)at regular intervals. There are also a few more techniques that were incorporated to stabilize the training.
