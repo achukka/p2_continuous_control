@@ -68,6 +68,7 @@ Note: [workspace_utils](https://github.com/adityaharish/p2_continuous_control/bl
 #### Hyper Parameters
 
 Following is the list of hyperparamters that we used during the training
+
 | Parameter                   | Value  |
 | ----------------------------|:------:|
 | Epoch Size epsiodes         | 1000   |
